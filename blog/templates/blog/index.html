@@ -1,7 +1,12 @@
 {%  extends 'base.html' %}
+{% load static %}
 
 {% block title %}
 My Blog
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -14,7 +19,7 @@ My Blog
 
     <section id="welcome">
       <header>
-          <img src="" alt="Rishav - The author of this blog"/>
+          <img src="{% static 'blog/images/my_image.jpg' %}" alt="Rishav - The author of this blog"/>
           <h2>
               Rishav's Blog
           </h2>
@@ -26,11 +31,12 @@ My Blog
 
     <section id="latest-posts">
       <h2> My latest thought's</h2>
+
       <ul>
           <li>
             <article class="post">
                 <a href="">
-                    <img src="" alt="Mountain Hiking"/>
+                    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Mountain Hiking"/>
                     <div class="post__content">
                       <h3>Mountain Hiking</h3>
                         <p>Mountains in California are so beautiful and the roads though
