@@ -1,0 +1,15 @@
+{% load static %}
+
+<li>
+    <article class="post">
+        <a href="{% url 'post-detail-page' 'the-mountains' %}">
+            <img src="{% static 'blog/images/mountains.jpg' %}" alt="Mountain Hiking"/>
+            <div class="post__content">
+                <h3>Mountain Hiking</h3>
+                <p>Mountains in California are so beautiful and the roads though
+                    them amazed me! I would love to visit the place again in future
+                    soon :)</p>
+            </div>
+        </a>
+    </article>
+</li>

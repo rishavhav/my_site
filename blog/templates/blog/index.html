@@ -6,17 +6,11 @@ My Blog
 {% endblock %}
 
 {% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
 <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock %}
 
 {% block content %}
-    <header id="main-navigation">
-      <h1><a href="">Rishav's Blog</a> </h1>
-      <nav>
-            <a href="">All Posts</a>
-      </nav>
-    </header>
-
     <section id="welcome">
       <header>
           <img src="{% static 'blog/images/my_image.jpg' %}" alt="Rishav - The author of this blog"/>
@@ -33,19 +27,7 @@ My Blog
       <h2> My latest thought's</h2>
 
       <ul>
-          <li>
-            <article class="post">
-                <a href="">
-                    <img src="{% static 'blog/images/mountains.jpg' %}" alt="Mountain Hiking"/>
-                    <div class="post__content">
-                      <h3>Mountain Hiking</h3>
-                        <p>Mountains in California are so beautiful and the roads though
-                            them amazed me! I would love to visit the place again in future
-                             soon :)</p>
-                    </div>
-                </a>
-            </article>
-          </li>
+       {% include "blog/includes/post.html" %}
       </ul>
     </section>
 
