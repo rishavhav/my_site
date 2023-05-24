@@ -1,0 +1,55 @@
+{%  extends 'base.html' %}
+
+{% block title %}
+My Blog
+{% endblock %}
+
+{% block content %}
+    <header id="main-navigation">
+      <h1><a href="">Rishav's Blog</a> </h1>
+      <nav>
+            <a href="">All Posts</a>
+      </nav>
+    </header>
+
+    <section id="welcome">
+      <header>
+          <img src="" alt="Rishav - The author of this blog"/>
+          <h2>
+              Rishav's Blog
+          </h2>
+      </header>
+      <p>
+          Hi, I am Rishav and I love blogging
+      </p>
+    </section>
+
+    <section id="latest-posts">
+      <h2> My latest thought's</h2>
+      <ul>
+          <li>
+            <article class="post">
+                <a href="">
+                    <img src="" alt="Mountain Hiking"/>
+                    <div class="post__content">
+                      <h3>Mountain Hiking</h3>
+                        <p>Mountains in California are so beautiful and the roads though
+                            them amazed me! I would love to visit the place again in future
+                             soon :)</p>
+                    </div>
+                </a>
+            </article>
+          </li>
+      </ul>
+    </section>
+
+
+    <section id="about">
+      <h2>What I Do</h2>
+      <p>I love to code in python and I enjoy working on Django!</p>
+    <p>
+        My goal is to get into a good company in USA!
+    </p>
+    </section>
+
+{% endblock %}
